@@ -1,149 +1,149 @@
 package JavaBasic1;
-// Å¬·¡½º: ¼Ó¼º + ±â´É
+// í´ë˜ìŠ¤: ì†ì„± + ê¸°ëŠ¥
 public class ClassMethodEx {
 	
 	static String model;
 	
-	// [Region] Car ClassÀÇ ¸â¹ö
-	// º¯¼ö ¼±¾ğ¸¸ ÇÏ°í ÃÊ±âÈ­¸¦ ÇÏÁö ¾Ê¾ÒÀ»°æ¿ì ±âº»°ªÀÌ µé¾î°¨
+	// [Region] Car Classì˜ ë©¤ë²„
+	// ë³€ìˆ˜ ì„ ì–¸ë§Œ í•˜ê³  ì´ˆê¸°í™”ë¥¼ í•˜ì§€ ì•Šì•˜ì„ê²½ìš° ê¸°ë³¸ê°’ì´ ë“¤ì–´ê°
 	int number;		// Default: 0
 	int speed;		// Default: 0
 	String color;	// Default: null
 	
 	public void speedUp() {
-		System.out.println("¼Óµµ¸¦ ¿Ã¸°´Ù");
+		System.out.println("ì†ë„ë¥¼ ì˜¬ë¦°ë‹¤");
 		speed += 5;
 	}
 
 	public void speedDown() {
-		System.out.println("¼Óµµ¸¦ ³»¸°´Ù");
+		System.out.println("ì†ë„ë¥¼ ë‚´ë¦°ë‹¤");
 		speed -= 5;
 	}	// [end]
 	
 	public static void main(String[] args) {
-		ClassMethodEx myCar = new ClassMethodEx();	// Å¬·¡½º¸¦ °´Ã¼È­ ÇÒ¶§´Â 
-		ClassMethodEx yourCar = new ClassMethodEx();// Å¬·¡½º¸í ÂüÁ¶º¯¼ö = new Å¬·¡½º¸í();
+		ClassMethodEx myCar = new ClassMethodEx();	// í´ë˜ìŠ¤ë¥¼ ê°ì²´í™” í• ë•ŒëŠ” 
+		ClassMethodEx yourCar = new ClassMethodEx();// í´ë˜ìŠ¤ëª… ì°¸ì¡°ë³€ìˆ˜ = new í´ë˜ìŠ¤ëª…();
 		
 		myCar.number = 1;
 		myCar.speed = 10;
 		myCar.color = "Black";
-		System.out.println("myCarÀÇ number: " + myCar.number);
-		System.out.println("myCarÀÇ speed: " + myCar.speed);
-		System.out.println("myCarÀÇ color: " + myCar.color);
+		System.out.println("myCarì˜ number: " + myCar.number);
+		System.out.println("myCarì˜ speed: " + myCar.speed);
+		System.out.println("myCarì˜ color: " + myCar.color);
 		myCar.speedUp();
-		System.out.println("myCarÀÇ speed: " + myCar.speed);
+		System.out.println("myCarì˜ speed: " + myCar.speed);
 		System.out.println("---------------------");
 
 		yourCar.speed = 50;
-		System.out.println("yourCarÀÇ speed: " + yourCar.speed);
-		System.out.println("yourCarÀÇ color: " + yourCar.color);
+		System.out.println("yourCarì˜ speed: " + yourCar.speed);
+		System.out.println("yourCarì˜ color: " + yourCar.color);
 		yourCar.speedDown();
-		System.out.println("yourCarÀÇ speed: " + yourCar.speed);
+		System.out.println("yourCarì˜ speed: " + yourCar.speed);
 		System.out.println("---------------------");
 		
-		// class´Â »ç¿ëÀÚÁ¤ÀÇ Å¸ÀÔÀÌ´Ù.
-		CarDemo hisCar = new CarDemo();	// ÀÎ½ºÅÏ½º hisCar »ı¼º
-		CarDemo herCar = new CarDemo(); // ÀÎ½ºÅÏ½º herCar »ı¼º
+		// classëŠ” ì‚¬ìš©ìì •ì˜ íƒ€ì…ì´ë‹¤.
+		CarDemo hisCar = new CarDemo();	// ì¸ìŠ¤í„´ìŠ¤ hisCar ìƒì„±
+		CarDemo herCar = new CarDemo(); // ì¸ìŠ¤í„´ìŠ¤ herCar ìƒì„±
 		
-		// ¸â¹ö¸Ş¼ÒµåÀÇ È£Ãâ: ÀÎ½ºÅÏ½º¸¦ »ı¼ºÇÑ ÈÄ¿¡ °¡´ÉÇÏ´Ù.(ÂüÁ¶º¯¼ö¸í.¸Ş¼Òµå¸í)
+		// ë©¤ë²„ë©”ì†Œë“œì˜ í˜¸ì¶œ: ì¸ìŠ¤í„´ìŠ¤ë¥¼ ìƒì„±í•œ í›„ì— ê°€ëŠ¥í•˜ë‹¤.(ì°¸ì¡°ë³€ìˆ˜ëª….ë©”ì†Œë“œëª…)
 		hisCar.power = 100;
-		System.out.println("hisCarÀÇ power: " + hisCar.power);
+		System.out.println("hisCarì˜ power: " + hisCar.power);
 		hisCar.powerUp();
 		hisCar.powerUp();
-		System.out.println("hisCarÀÇ power: " + hisCar.power);
+		System.out.println("hisCarì˜ power: " + hisCar.power);
 		hisCar.powerDown();
-		System.out.println("hisCarÀÇ power: " + hisCar.power);
+		System.out.println("hisCarì˜ power: " + hisCar.power);
 		System.out.println("---------------------");
-		System.out.println("herCarÀÇ power: " + herCar.power);
+		System.out.println("herCarì˜ power: " + herCar.power);
 		herCar.powerUp();
-		System.out.println("herCarÀÇ power: " + herCar.power);
+		System.out.println("herCarì˜ power: " + herCar.power);
 		System.out.println("---------------------");
 		
-		// Å¬·¡½ºº¯¼ö È£Ãâ: Å¬·¡½º¸í, º¯¼ö¸í
-		System.out.println("Å¬·¡½ºº¯¼ö kind: " + CarDemo.kind);
+		// í´ë˜ìŠ¤ë³€ìˆ˜ í˜¸ì¶œ: í´ë˜ìŠ¤ëª…, ë³€ìˆ˜ëª…
+		System.out.println("í´ë˜ìŠ¤ë³€ìˆ˜ kind: " + CarDemo.kind);
 		
-		// ÀÎ½ºÅÏ½º º¯¼öÀÇ È£Ãâ: ÀÎ½ºÅÏ½º¸¦ »ı¼ºÇÑ ÈÄ¿¡ È£ÃâÇÒ ¼ö ÀÖ´Ù.
-		// ÀÎ½ºÅÏ½º¸í(°´Ã¼¸í).º¯¼ö
-//		System.out.println("ÀÎ½ºÅÏ½ºº¯¼ö engine: " + CarDemo.engine);
-		System.out.println("ÀÎ½ºÅÏ½ºº¯¼ö engine: " + herCar.engine);
+		// ì¸ìŠ¤í„´ìŠ¤ ë³€ìˆ˜ì˜ í˜¸ì¶œ: ì¸ìŠ¤í„´ìŠ¤ë¥¼ ìƒì„±í•œ í›„ì— í˜¸ì¶œí•  ìˆ˜ ìˆë‹¤.
+		// ì¸ìŠ¤í„´ìŠ¤ëª…(ê°ì²´ëª…).ë³€ìˆ˜
+//		System.out.println("ì¸ìŠ¤í„´ìŠ¤ë³€ìˆ˜ engine: " + CarDemo.engine);
+		System.out.println("ì¸ìŠ¤í„´ìŠ¤ë³€ìˆ˜ engine: " + herCar.engine);
 		herCar.engine = "V6";
-		System.out.println("ÀÎ½ºÅÏ½ºº¯¼ö engine: " + herCar.engine);
+		System.out.println("ì¸ìŠ¤í„´ìŠ¤ë³€ìˆ˜ engine: " + herCar.engine);
 
-		System.out.println("hisCarÀÇ kind: " + CarDemo.kind);
-		System.out.println("hisCarÀÇ kind: " + hisCar.kind);
-		System.out.println("herCarÀÇ kind: " + herCar.kind);
+		System.out.println("hisCarì˜ kind: " + CarDemo.kind);
+		System.out.println("hisCarì˜ kind: " + hisCar.kind);
+		System.out.println("herCarì˜ kind: " + herCar.kind);
 		System.out.println("---------------------");
-		hisCar.kind = "ÁßÇüÂ÷";
-		System.out.println("hisCarÀÇ kind: " + CarDemo.kind);
-		System.out.println("hisCarÀÇ kind: " + hisCar.kind);
-		System.out.println("herCarÀÇ kind: " + herCar.kind);
+		hisCar.kind = "ì¤‘í˜•ì°¨";
+		System.out.println("hisCarì˜ kind: " + CarDemo.kind);
+		System.out.println("hisCarì˜ kind: " + hisCar.kind);
+		System.out.println("herCarì˜ kind: " + herCar.kind);
 		System.out.println("---------------------");
 		
-		// °°Àº class ³»ÀÇ Å¬·¡½ºº¯¼ö´Â Å¬·¡½º¸íÀ» »ı·«ÇÒ ¼ö ÀÖ´Ù.
-		model = "Ä«´Ï¹ß";
+		// ê°™ì€ class ë‚´ì˜ í´ë˜ìŠ¤ë³€ìˆ˜ëŠ” í´ë˜ìŠ¤ëª…ì„ ìƒëµí•  ìˆ˜ ìˆë‹¤.
+		model = "ì¹´ë‹ˆë°œ";
 		System.out.println(model);
 		
-		int c;	// Áö¿ªº¯¼ö
-//		System.out.println(c);	// Áö¿ªº¯¼ö´Â ÃÊ±âÈ­¸¦ ÇÏÁö ¾ÊÀ¸¸é ¿¡·¯ ¹ß»ı.
+		int c;	// ì§€ì—­ë³€ìˆ˜
+//		System.out.println(c);	// ì§€ì—­ë³€ìˆ˜ëŠ” ì´ˆê¸°í™”ë¥¼ í•˜ì§€ ì•Šìœ¼ë©´ ì—ëŸ¬ ë°œìƒ.
 		c = 100;
-		System.out.println("Áö¿ªº¯¼ö c: " + c);
+		System.out.println("ì§€ì—­ë³€ìˆ˜ c: " + c);
 		
-//		System.out.println("Áö¿ªº¯¼ö aa: " + hisCar.aa);
+//		System.out.println("ì§€ì—­ë³€ìˆ˜ aa: " + hisCar.aa);
 
 		System.out.println("---------------------");
-		// Å¬·¡½º ¸Ş¼Òµå È£Ãâ: Å¬·¡½º¸í.¸Ş¼Òµå¸í(ÀÎ½ºÅÏ½º¸¦ »ı¼ºÇÒ ÇÊ¿ä°¡ ¾ø´Ù.)
+		// í´ë˜ìŠ¤ ë©”ì†Œë“œ í˜¸ì¶œ: í´ë˜ìŠ¤ëª….ë©”ì†Œë“œëª…(ì¸ìŠ¤í„´ìŠ¤ë¥¼ ìƒì„±í•  í•„ìš”ê°€ ì—†ë‹¤.)
 		hisCar.kind();
 		System.out.println("---------------------");
 		
 		hisCar.changeKind();
-		System.out.println("hisCarÀÇ kind: " + hisCar.kind);
-		System.out.println("herCarÀÇ kind: " + herCar.kind);
+		System.out.println("hisCarì˜ kind: " + hisCar.kind);
+		System.out.println("herCarì˜ kind: " + herCar.kind);
 	}
 }
 
-// ÇÑ ÆÄÀÏ ¾È¿¡´Â public class´Â ÇÏ³ª¸¸ Á¸ÀçÇØ¾ßÇÑ´Ù.
-// public Å¸ÀÔÀ» °¡Áö´Â Å¬·¡½ºÀÇ ÀÌ¸§À» ÆÄÀÏ¸íÀ¸·Î ÇÑ´Ù.
-// main() ¸Ş¼Òµå¸¦ °¡Áö´Â Å¬·¡½º¿¡ public Å¸ÀÔÀ» Á¤ÇØÁØ´Ù.
+// í•œ íŒŒì¼ ì•ˆì—ëŠ” public classëŠ” í•˜ë‚˜ë§Œ ì¡´ì¬í•´ì•¼í•œë‹¤.
+// public íƒ€ì…ì„ ê°€ì§€ëŠ” í´ë˜ìŠ¤ì˜ ì´ë¦„ì„ íŒŒì¼ëª…ìœ¼ë¡œ í•œë‹¤.
+// main() ë©”ì†Œë“œë¥¼ ê°€ì§€ëŠ” í´ë˜ìŠ¤ì— public íƒ€ì…ì„ ì •í•´ì¤€ë‹¤.
 class CarDemo{
-	// º¯¼ö(variable)
-	// 1) Å¬·¡½ºº¯¼ö: static ºÙÀº º¯¼ö(static º¯¼ö, °øÀ¯º¯¼ö)
-	// 2) ¸â¹öº¯¼ö(ÀÎ½ºÅÏ½º º¯¼ö: instance variable) : staticÀÌ ºÙÁö ¾ÊÀº º¯¼ö(non-static)
-	// - ÀÏ¹İÀûÀ¸·Î Å¬·¡½ºº¯¼ö¿Í ÀÎ½ºÅÏ½ºº¯¼ö¸¦ ¸â¹ö º¯¼ö¶ó°í ÇÑ´Ù.
-	//   Áï, Å¬·¡½º ¿µ¿ª¿¡ ¼±¾ğÇÑ º¯¼ö¸¦ ¸â¹ö º¯¼ö¶ó°í ÇÑ´Ù.
+	// ë³€ìˆ˜(variable)
+	// 1) í´ë˜ìŠ¤ë³€ìˆ˜: static ë¶™ì€ ë³€ìˆ˜(static ë³€ìˆ˜, ê³µìœ ë³€ìˆ˜)
+	// 2) ë©¤ë²„ë³€ìˆ˜(ì¸ìŠ¤í„´ìŠ¤ ë³€ìˆ˜: instance variable) : staticì´ ë¶™ì§€ ì•Šì€ ë³€ìˆ˜(non-static)
+	// - ì¼ë°˜ì ìœ¼ë¡œ í´ë˜ìŠ¤ë³€ìˆ˜ì™€ ì¸ìŠ¤í„´ìŠ¤ë³€ìˆ˜ë¥¼ ë©¤ë²„ ë³€ìˆ˜ë¼ê³  í•œë‹¤.
+	//   ì¦‰, í´ë˜ìŠ¤ ì˜ì—­ì— ì„ ì–¸í•œ ë³€ìˆ˜ë¥¼ ë©¤ë²„ ë³€ìˆ˜ë¼ê³  í•œë‹¤.
 	//
-	// 3) Áö¿ªº¯¼ö(local º¯¼ö): ¸Ş¼­µåÀÇ ºí·° ¾È¿¡ ¼±¾ğµÈ º¯¼ö
-	//                           ¸Ş¼­µåÀÇ ºí·°ÀÌ ³¡³ª´Â ¼ø°£ »ı¸íÀ» ´ÙÇÑ´Ù.
+	// 3) ì§€ì—­ë³€ìˆ˜(local ë³€ìˆ˜): ë©”ì„œë“œì˜ ë¸”ëŸ­ ì•ˆì— ì„ ì–¸ëœ ë³€ìˆ˜
+	//                           ë©”ì„œë“œì˜ ë¸”ëŸ­ì´ ëë‚˜ëŠ” ìˆœê°„ ìƒëª…ì„ ë‹¤í•œë‹¤.
 	
 	
-	// ¸â¹öº¯¼ö´Â ÃÊ±âÈ­¸¦ ÇÏÁö ¾ÊÀ» °æ¿ì default °ªÀÌ µé¾î°£´Ù.
-	// ex> int default °ªÀ¸·Î 0, StringÀº null°ªÀÌ µé¾î°£´Ù.
-	// Áö¿ªº¯¼ö´Â ²À! ÃÊ±âÈ­¸¦ ÇØ¾ßÇÑ´Ù.
+	// ë©¤ë²„ë³€ìˆ˜ëŠ” ì´ˆê¸°í™”ë¥¼ í•˜ì§€ ì•Šì„ ê²½ìš° default ê°’ì´ ë“¤ì–´ê°„ë‹¤.
+	// ex> int default ê°’ìœ¼ë¡œ 0, Stringì€ nullê°’ì´ ë“¤ì–´ê°„ë‹¤.
+	// ì§€ì—­ë³€ìˆ˜ëŠ” ê¼­! ì´ˆê¸°í™”ë¥¼ í•´ì•¼í•œë‹¤.
 	
-	static String kind = "¼ÒÇüÂ÷";	// Å¬·¡½ºº¯¼ö
+	static String kind = "ì†Œí˜•ì°¨";	// í´ë˜ìŠ¤ë³€ìˆ˜
 	int power;
 	String engine;
 	
-	// [Region] »ı¼ºÀÚ: ÀÎ½ºÅÏ½º(°´Ã¼)¸¦ »ı¼ºÇÒ¶§ È£Ãâ
-	//			 - »ı¼ºÀÚ ÀÌ¸§Àº ÇØ´ç Å¬·¡½º¸í°ú µ¿ÀÏ
-	//			 - ¸Ş¼Òµå¿Í ºñ½ÁÇÏ³ª ¹İÈ¯Å¸ÀÔÀÌ ¾ø¾î¾ß ÇÑ´Ù.
-	//			 - ¸â¹öº¯¼ö¸¦ ÃÊ±âÈ­ ÇÒ ¶§ »ç¿ëÇÑ´Ù.
+	// [Region] ìƒì„±ì: ì¸ìŠ¤í„´ìŠ¤(ê°ì²´)ë¥¼ ìƒì„±í• ë•Œ í˜¸ì¶œ
+	//			 - ìƒì„±ì ì´ë¦„ì€ í•´ë‹¹ í´ë˜ìŠ¤ëª…ê³¼ ë™ì¼
+	//			 - ë©”ì†Œë“œì™€ ë¹„ìŠ·í•˜ë‚˜ ë°˜í™˜íƒ€ì…ì´ ì—†ì–´ì•¼ í•œë‹¤.
+	//			 - ë©¤ë²„ë³€ìˆ˜ë¥¼ ì´ˆê¸°í™” í•  ë•Œ ì‚¬ìš©í•œë‹¤.
 	public CarDemo() {
-		kind = "¼ÒÇüÂ÷";
-		int aa = 200;	// Áö¿ªº¯¼ö aa´Â ÀÌ »ı¼ºÀÚ ¾È¿¡¼­¸¸ À¯È¿ÇÏ´Ù.
+		kind = "ì†Œí˜•ì°¨";
+		int aa = 200;	// ì§€ì—­ë³€ìˆ˜ aaëŠ” ì´ ìƒì„±ì ì•ˆì—ì„œë§Œ ìœ íš¨í•˜ë‹¤.
 	}
 	// [end]
 	
-	// [Region] Å¬·¡½º ¸Ş¼Òµå: static Á¦¾îÀÚ°¡ ºÙ¾î ÀÖ´Â ¸Ş¼Òµå
-	//			- Å¬·¡½º º¯¼ö¸¸ »ç¿ëÇÒ ¼ö ÀÖ´Ù.
+	// [Region] í´ë˜ìŠ¤ ë©”ì†Œë“œ: static ì œì–´ìê°€ ë¶™ì–´ ìˆëŠ” ë©”ì†Œë“œ
+	//			- í´ë˜ìŠ¤ ë³€ìˆ˜ë§Œ ì‚¬ìš©í•  ìˆ˜ ìˆë‹¤.
 	public static void kind() {
-		System.out.println("¼ÒÇüÂ÷ ÀÔ´Ï´Ù.");
-		System.out.println(kind + " ÀÔ´Ï´Ù.");
+		System.out.println("ì†Œí˜•ì°¨ ì…ë‹ˆë‹¤.");
+		System.out.println(kind + " ì…ë‹ˆë‹¤.");
 //		System.out.println(power);
 	}// [end]
 	
-	// [Region] ¸â¹ö ¸Ş¼Òµå
+	// [Region] ë©¤ë²„ ë©”ì†Œë“œ
 	public void changeKind() {
-		kind = "´ëÇüÂ÷";	// ¸â¹ö ¸Ş¼Òµå ¾È¿¡¼­´Â Å¬·¡½º º¯¼ö »ç¿ë °¡´É
+		kind = "ëŒ€í˜•ì°¨";	// ë©¤ë²„ ë©”ì†Œë“œ ì•ˆì—ì„œëŠ” í´ë˜ìŠ¤ ë³€ìˆ˜ ì‚¬ìš© ê°€ëŠ¥
 	}
 	
 	public void powerUp() {

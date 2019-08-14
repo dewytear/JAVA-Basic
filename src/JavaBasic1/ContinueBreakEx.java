@@ -1,7 +1,7 @@
 package JavaBasic1;
 public class ContinueBreakEx {
 	public static void main(String[] args) {
-		// Break: ¹İº¹¹®À» Áß´ÜÇÏ¶ó.
+		// Break: ë°˜ë³µë¬¸ì„ ì¤‘ë‹¨í•˜ë¼.
 		for(int i=1;i<=5;i++) {
 			if(i == 3) break;
 			System.out.println(i);
@@ -9,7 +9,7 @@ public class ContinueBreakEx {
 		
 		System.out.println();
 		
-		// Continue: °è¼ÓÇØ¼­ ¹İº¹¹®À» ½ÇÇàÇÏ¶ó.
+		// Continue: ê³„ì†í•´ì„œ ë°˜ë³µë¬¸ì„ ì‹¤í–‰í•˜ë¼.
 		for(int i=1;i<=5;i++) {
 			if(i == 3) continue;
 			System.out.println(i);
@@ -33,22 +33,22 @@ public class ContinueBreakEx {
 			}//End of for1
 		}//End of for2
 
-		System.out.println("\nbreak ·¹ÀÌºí");
-		out: // ·¹ÀÌºí¸í
+		System.out.println("\nbreak ë ˆì´ë¸”");
+		out: // ë ˆì´ë¸”ëª…
 		for(int i=0;i<=3;i++) {
 			for(int j=0;j<=3;j++) {
 				if(j == 1) break out;
-				// out°ú °¡Àå °¡±î¿î ¹İº¹¹®À» ¹ş¾î³ª¶ó!!
+				// outê³¼ ê°€ì¥ ê°€ê¹Œìš´ ë°˜ë³µë¬¸ì„ ë²—ì–´ë‚˜ë¼!!
 				System.out.println("i = " + i + ", j = " + j);
 			}
 		}//End of for
 
-		System.out.println("\ncontinue ·¹ÀÌºí");
-		out: // ·¹ÀÌºí¸í
+		System.out.println("\ncontinue ë ˆì´ë¸”");
+		out: // ë ˆì´ë¸”ëª…
 		for(int i=0;i<=3;i++) {
 			for(int j=0;j<=3;j++) {
 				if(j == 1) continue out;
-				// out°ú °¡Àå °¡±î¿î ¹İº¹¹®À» ¹ş¾î³ª¶ó!!
+				// outê³¼ ê°€ì¥ ê°€ê¹Œìš´ ë°˜ë³µë¬¸ì„ ë²—ì–´ë‚˜ë¼!!
 				System.out.println("i = " + i + ", j = " + j);
 			}
 		}//End of for

@@ -3,9 +3,9 @@ public class CastingEx {
 
 	public static void main(String[] args)
 	{
-		System.out.println("### ÇÁ·Î±×·¥ÀÇ ½ÃÀÛ ###");
+		System.out.println("### í”„ë¡œê·¸ë¨ì˜ ì‹œì‘ ###");
 		
-		System.out.println("\r\n*** Çüº¯È¯ ***");
+		System.out.println("\r\n*** í˜•ë³€í™˜ ***");
 		
 		int _ic = 65;
 		char _ci = 'A';
@@ -17,14 +17,14 @@ public class CastingEx {
 		System.out.println("_f = " + (float)_if);
 
 		byte bt = 10;
-		long ln = bt;		// ÀÚµ¿Çüº¯È¯
-		int i = (int)ln;	// °­Á¦Çüº¯È¯(Casting)
+		long ln = bt;		// ìë™í˜•ë³€í™˜
+		int i = (int)ln;	// ê°•ì œí˜•ë³€í™˜(Casting)
 		System.out.println("ln = " + ln);
 		System.out.println("i = " + i);
 		
 		char ch = 'A';
 		System.out.println("ch = " + ch + 1);
-		System.out.println(ch + 1);				// ÀÏÁ¾ÀÇ Á¤¼öÇüÀ¸·Î ÀÚµ¿Çüº¯È¯
+		System.out.println(ch + 1);				// ì¼ì¢…ì˜ ì •ìˆ˜í˜•ìœ¼ë¡œ ìë™í˜•ë³€í™˜
 		
 		char ch2 = 'C';
 		int result = ch2 + 3;
@@ -34,7 +34,7 @@ public class CastingEx {
 		char ch3 = (char)result;
 		System.out.println("ch3 = " + ch3);
 		
-		System.out.println("\r\n### ÇÁ·Î±×·¥ÀÇ ³¡ ###");
+		System.out.println("\r\n### í”„ë¡œê·¸ë¨ì˜ ë ###");
 		
 	}
 }
