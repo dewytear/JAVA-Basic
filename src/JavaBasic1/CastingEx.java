@@ -1,4 +1,4 @@
-
+package JavaBasic1;
 public class CastingEx {
 
 	public static void main(String[] args)

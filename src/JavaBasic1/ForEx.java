@@ -1,4 +1,4 @@
-
+package JavaBasic1;
 public class ForEx {
 
 	public static void main(String[] args)

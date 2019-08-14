@@ -1,3 +1,4 @@
+package JavaBasic1;
 // 클래스: 속성 + 기능
 public class ClassMethodEx {
 	
