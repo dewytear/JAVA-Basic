@@ -1,11 +1,11 @@
-package JavaBasic1;
+package javaBasic1;
 public class EscapeLiteral {
 	public static void main(String[] args) {
-		// ì œì–´ë¬¸ì(Escape Literal)
-		System.out.print("ê°€ë‚˜ë‹¤ë¼ë§ˆë°”ì‚¬" + '\n');
-		System.out.print("ê°€ë‚˜ë‹¤ë¼ë§ˆë°”ì‚¬" + '\n');
-		System.out.println("ê°€ë‚˜\të‹¤ë¼\të§ˆë°”ì‚¬");
-		System.out.print("ê°€ë‚˜ë‹¤ë¼ë§ˆ\rë°”ì‚¬\n");
-		System.out.print("ê°€ë‚˜ë‹¤ë¼ë§ˆ\"ë°”ì‚¬");
+		// ???´ë¬¸??(Escape Literal)
+		System.out.print("ê°????¤ë?¼ë?ë°???" + '\n');
+		System.out.print("ê°????¤ë?¼ë?ë°???" + '\n');
+		System.out.println("ê°???\t?¤ë??\të§?ë°???");
+		System.out.print("ê°????¤ë?¼ë?\rë°???\n");
+		System.out.print("ê°????¤ë?¼ë?\"ë°???");
 	}
 }

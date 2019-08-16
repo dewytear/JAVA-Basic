@@ -1,4 +1,4 @@
-package JavaBasic2;
+package javaBasic2;
 // Contructor Overloading
 // 생성자: 인스턴스(객체)를 생성(최초로 실행되는 메소드)할 때 호출하는 메소드의 일종
 
