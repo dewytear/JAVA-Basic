@@ -7,8 +7,8 @@ public class FinalEx2 {
 		System.out.println(fe.aa);
 		
 		/*
-		System.out.println(fe.AA);	// static 변수이므로 다른 틀래스 내에서 호출하고자 한다면
-		                            // 클래스.변수 의 형식을 사용해야 한다.
+		System.out.println(fe.AA);	// static 변수이므로 다른 클래스 내에서 호출하고자 한다면
+		                            // (클래스.변수) 의 형식을 사용해야 한다.
 		*/
 		
 		System.out.println(FinalEx.AA);
