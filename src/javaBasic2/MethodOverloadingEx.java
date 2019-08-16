@@ -1,4 +1,4 @@
-package JavaBasic2;
+package javaBasic2;
 // Overloading
 public class MethodOverloadingEx {
 

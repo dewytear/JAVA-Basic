@@ -1,6 +1,4 @@
-import MyPackage.*;
-//import MyPackage.Demo1;
-//import MyPackage.Demo2;
+import myPackage.*;
 
 public class PackageEx {
 

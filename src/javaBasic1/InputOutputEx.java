@@ -1,4 +1,4 @@
-package JavaBasic1;
+package javaBasic1;
 // System.in
 import java.io.*;
 

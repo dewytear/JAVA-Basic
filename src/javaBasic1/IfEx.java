@@ -1,4 +1,4 @@
-package JavaBasic1;
+package javaBasic1;
 public class IfEx {
 
 	public static void main(String[] args)

@@ -1,4 +1,4 @@
-package JavaBasic1;
+package javaBasic1;
 public class MemberEx {
 	// 클래스의 구성요소: 속성(필드) + 메서드(생성자)
 	
