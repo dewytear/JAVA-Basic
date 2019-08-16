@@ -5,11 +5,11 @@ public class ForEx {
 	{
 		for(int i = 0; i < 5; i++)
 		{
-			System.out.println("¹Ýº¹¹®");
-		}	// º¯¼ö i(Áö¿ªº¯¼ö)´Â for loop¸¦ ¹þ¾î³ª¸é »ç¶óÁø´Ù.
+			System.out.println("ë°˜ë³µë¬¸");
+		}	// ë³€ìˆ˜ i(ì§€ì—­ë³€ìˆ˜)ëŠ” for loopë¥¼ ë²—ì–´ë‚˜ë©´ ì‚¬ë¼ì§„ë‹¤.
 		
 //		for(;;) {
-//			System.out.println("¹«ÇÑ¹Ýº¹");
+//			System.out.println("ë¬´í•œë°˜ë³µ");
 //		}
 		
 		int SUM = 0;
@@ -20,9 +20,9 @@ public class ForEx {
 				System.out.println("SUM = " + SUM);
 			}
 		}
-		System.out.println("1ºÎÅÍ 100±îÁöÀÇ ÇÕ : " + SUM + "\n\r");
+		System.out.println("1ë¶€í„° 100ê¹Œì§€ì˜ í•© : " + SUM + "\n\r");
 		
-		// ±¸±¸´Ü ¿¹Á¦
+		// êµ¬êµ¬ë‹¨ ì˜ˆì œ
 		for(int i=1;i<=9;i++) {
 			for(int j=2;j<=9;j++) {
 				System.out.print(j + "*" + i + "=" + (i*j) + "\t");
