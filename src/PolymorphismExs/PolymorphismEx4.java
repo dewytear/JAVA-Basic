@@ -30,7 +30,7 @@ public class PolymorphismEx4 {
 		System.out.println("-----------------");
 		System.out.println("-     array     -");
 		System.out.println("-----------------");
-		// 배열을 이용
+		// 배열을 이용하여 다형성 구현
 		Calculator cns[] = new Calculator[2];
 		cns[0] = new Sum();
 		cns[1] = new Subtractor();
@@ -41,6 +41,7 @@ public class PolymorphismEx4 {
 		System.out.println("-----------------");
 		System.out.println("-    Sequence   -");
 		System.out.println("-----------------");
+		// 배열을 이용하여 실행 순서 표현
 		exeSequence();
 		
 //		Sum sum = new Sum();
