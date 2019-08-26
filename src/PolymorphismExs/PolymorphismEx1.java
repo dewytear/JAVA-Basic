@@ -22,10 +22,9 @@ public class PolymorphismEx1 {
 		// 자식타입으로 부모의 인스턴스 생성을 할 수 없다.
 		// - 자식타입에는 멤버변수가 더 많을 수 있기때문에..
 //		Child cs = new Super();
+		
 	}
-
 }
-
 
 class Super{
 	int a=100;
