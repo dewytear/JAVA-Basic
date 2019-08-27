@@ -3,7 +3,7 @@ package PolymorphismExs;
 public class PolymorphismEx4 {
 
 	static int i = 0;
-	static Calculator calcArray[] = new Calculator[4];
+	static Calculator calcArray[] = new Calculator[6];
 	
 	public static void exe(Calculator cal) {
 		calcArray[i++] = cal;
@@ -12,9 +12,17 @@ public class PolymorphismEx4 {
 	}
 
 	public static void exeSequence() {
-		for(i = 0; i < calcArray.length; i++) {
-			String str = calcArray[i].operand();
-			System.out.println("연산순서(" + i + "): " + str);
+		try {
+			for(i = 0; i < calcArray.length; i++) {
+				if(calcArray[i].operand() == null) break;
+				String str = calcArray[i].operand();
+				System.out.println("연산순서(" + i + "): " + str);
+			}
+		}catch(NullPointerException e) {
+			// 에외처리
+			System.out.println(e.getClass() + ": " + e.getMessage());
+		}finally {
+			System.out.println("End");
 		}
 	}
 	
