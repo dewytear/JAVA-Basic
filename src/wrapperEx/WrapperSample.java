@@ -49,5 +49,6 @@ public class WrapperSample {
 		int p = intg + o;		// unAutoBoxing: wrapper 객체를 자동으로 기본형으로 바꾸어줌
 		Integer ing = 200;		// autoBoxing: Integer ing = new Integer(200);
 		System.out.println(p);
+		System.out.println(ing);
 	}
 }
