@@ -19,7 +19,8 @@ public class PolymorphismEx4 {
 				System.out.println("연산순서(" + i + "): " + str);
 			}
 		}catch(NullPointerException e) {
-			// 에외처리
+//		}catch(Exception e) {
+			// 에외처리 
 			System.out.println(e.getClass() + ": " + e.getMessage());
 		}finally {
 			System.out.println("End");
