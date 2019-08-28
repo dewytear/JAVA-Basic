@@ -1,4 +1,4 @@
-package EnumEx;
+package enumEx;
 
 // A회사 등급
 interface GRADE_A{

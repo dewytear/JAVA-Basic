@@ -1,4 +1,4 @@
-package EnumEx;
+package enumEx;
 
 public class EnumEx1 {
 	

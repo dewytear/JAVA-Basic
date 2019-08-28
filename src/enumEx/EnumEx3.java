@@ -1,4 +1,4 @@
-package EnumEx;
+package enumEx;
 
 //class LEVEL{
 //	public static final LEVEL PLATINUM_MEMBER = new LEVEL();
