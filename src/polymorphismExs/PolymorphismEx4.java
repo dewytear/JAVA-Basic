@@ -1,4 +1,4 @@
-package PolymorphismExs;
+package polymorphismExs;
 
 public class PolymorphismEx4 {
 
