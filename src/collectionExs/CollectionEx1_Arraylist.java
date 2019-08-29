@@ -2,7 +2,7 @@ package collectionExs;
 
 import java.util.ArrayList;
 
-public class CollectionEx1 {
+public class CollectionEx1_Arraylist {
 	public static void main(String[] args) {
 
 		System.out.println("-¹è¿­---------------");
