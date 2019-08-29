@@ -1,4 +1,4 @@
-import myPackage.*;
+import javaBasic2.myPackage.*;
 
 public class PackageEx {
 
