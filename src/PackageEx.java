@@ -7,7 +7,7 @@ public class PackageEx {
 		d1.MethodDemo1();
 		
 		Demo2 d2 = new Demo2();
-		d2.MethodDemo2();
+		d2.MethodDemo2();//aa
 	}
 
 }
