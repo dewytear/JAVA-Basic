@@ -11,7 +11,7 @@ public class Exam1_1 {
 			  System.out.println("i가 "+i+"일때 : "+Hab);
 		}
 		
-		System.out.println("1부터 10까지의 합은 "+ Hab +"입니다!");		
+		System.out.println("1부터 10까지의 합은 "+ Hab +"입니당!");		
 
 	}
 
