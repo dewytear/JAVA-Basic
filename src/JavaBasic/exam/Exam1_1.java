@@ -12,7 +12,8 @@ public class Exam1_1 {
 		}
 		
 		System.out.println("1부터 10까지의 합은 "+ Hab +"입니당!");		
-
+		System.out.println("CodeMonkey 왔다감");		
+			
 	}
 
 }
